@@ -25,11 +25,7 @@ void parallelMatrixVector(const vector<vector<int>>& mat, const vector<int>& vec
     }
 }
 
-void printVector(const vector<int>& v) {
-    for (auto x : v)
-        cout << x << " ";
-    cout << endl;
-}
+
 
 int main() {
     int n, m;
@@ -67,12 +63,12 @@ int main() {
     
     cout << "\n----- Sequential Matrix-Vector Multiplication Output -----\n";
     cout << "Result Vector: ";
-    printVector(result_seq);
+    // printVector(result_seq);
     cout << "Time Taken: " << durationSeq.count() << " milliseconds\n";
 
     cout << "\n----- Parallel Matrix-Vector Multiplication Output -----\n";
     cout << "Result Vector: ";
-    printVector(result_par);
+    // printVector(result_par);
     cout << "Time Taken: " << durationPar.count() << " milliseconds\n";
     
     return 0;
